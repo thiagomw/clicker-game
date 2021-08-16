@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <p>Moneyz: <span id="score">$0</span></p>
+        <div id="div-img">
+        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clikingPower)">
+        </div>
+        <button onclick="buyCursor()">Cursor [<span id="cursor-cost">$15</span>] -- <span id="cursors">0</span></button>
+        <button onclick="buyTeammate()">Teammate [<span id="teammate-cost">$100</span>] -- <span id="teammate">0</span></button>
+        <script src="/game.js"></script>
+    </body>
+</html>
