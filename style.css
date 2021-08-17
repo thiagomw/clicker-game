@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 div img{
-    width: 120px;
-    height: 145px;
+    width: 165px;
+    height: 190px;
     transform: scaleX(-1);
 }
