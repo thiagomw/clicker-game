@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <p>Moneyz: <span id="score">$0</span></p>
+        <p>Money: <span id="score">$0</span></p>
+        <p id="scorepersecond"><span>$0 money per second</span></p>
         <div id="div-img">
-        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clikingPower)">
+        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clickingPower)">
         </div>
         <div id="div-btn">
         <button onclick="buyCursor()">Cursor [<span id="cursor-cost">$15</span>] -- <span id="cursors">0</span></button>
         <button onclick="buyTeammate()">Teammate [<span id="teammate-cost">$100</span>] -- <span id="teammate">0</span></button>
         </div>
+        <button onclick="resetGame()">Reset Game</button>
         <footer>&copy;Todos os direitos reservados</footer>
         <script src="/game.js"></script>
     </body>
