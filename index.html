@@ -6,20 +6,39 @@
         <title>A dodge ball clicker game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <p>Money: <span id="score">$0</span></p>
-        <p id="scorepersecond"><span>$0 money per second</span></p>
-        <div id="div-img">
-        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clickingPower)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Money: <span id="score">$0</span></p>
+                <p id="scorepersecond"><span>$0 money per second</span></p>
+                <button onclick="buyCursor()" class="row btn btn-warning">Cursor [<span id="cursor-cost">$15</span>] -- <span id="cursors">0</span></button>
+                <button onclick="buyTeammate()" class="row btn btn-warning">Teammate [<span id="teammate-cost">$100</span>] -- <span id="teammate">0</span></button>
+                <div class="pt-2">
+                    <button onclick="resetGame()" class="row btn btn-danger">Reset Game</button>
+                </div>
+            </div>
+            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="canva">
+                    <div id="div-otto" class="img-otto">
+                        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clickingPower)">
+                        <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="div-btn">
-        <button onclick="buyCursor()">Cursor [<span id="cursor-cost">$15</span>] -- <span id="cursors">0</span></button>
-        <button onclick="buyTeammate()">Teammate [<span id="teammate-cost">$100</span>] -- <span id="teammate">0</span></button>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>&copy;Todos os direitos reservados</footer>
+            </div>
         </div>
-        <button onclick="resetGame()">Reset Game</button>
-        <footer>&copy;Todos os direitos reservados</footer>
-        <script src="/game.js"></script>
+    </div>
+    <script src="/game.js"></script>
     </body>
 </html>

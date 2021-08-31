@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A dodge ball clicker game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <p>Money: <span id="score">$0</span></p>
+        <p id="scorepersecond"><span>$0 money per second</span></p>
+        <div id="div-btn">
+            <button onclick="buyCursor()" class="row btn btn-warning">Cursor [<span id="cursor-cost">$15</span>] -- <span id="cursors">0</span></button>
+            <button onclick="buyTeammate()" class="row btn btn-warning">Teammate [<span id="teammate-cost">$100</span>] -- <span id="teammate">0</span></button>
+            <div class="pt-2">
+            <button onclick="resetGame()" class="row btn btn-danger">Reset Game</button>
+        </div>
+        <div id="canva">
+            <div id="div-otto" class="img-otto">
+                <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px" vertical-align="center" onclick="addToScore(clickingPower)">
+                <img src="/images/otto.gif" alt="Otto Gif" width="300px" height="300px">
+            </div>
+        </div>
+        <footer>&copy;Todos os direitos reservados</footer>
+        <script src="/game.js"></script>
+    </body>
+</html>
